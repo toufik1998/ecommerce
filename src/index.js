@@ -7,5 +7,13 @@ import "bootstrap/dist/js/bootstrap";
 import "@fortawesome/fontawesome-free/js/all";
 
 $(document).ready(function(){
+
     $("[data-toggle='tooltip']").tooltip();
+
+    $(".add-to-cart-btn").click(function(){
+        alert("اضيف المنتج الى عربة الشراء");
+    });
+
+    $("#copyright").text("جميع الحقوق محفوظة للمتجر لسنة " + new Date().getFullYear());
+
 });
