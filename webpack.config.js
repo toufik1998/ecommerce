@@ -17,7 +17,7 @@ module.exports = {
 
   devServer: {
       contentBase: path.join(__dirname, "/dist"),
-      port: 3002,
+      port: 1999,
       writeToDisk: true,
       open: true,
   },
@@ -86,9 +86,21 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html", //  فقط  index  و ليس index.html  هنا يجب كتابة اسم الملف مع الامتداد أي
+      filename: "index.html", 
       template: "./src/index.html",
     }),
+
+      new HtmlWebpackPlugin({
+        filename: "product.html", 
+        template: "./src/product.html",
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "checkout.html", 
+        template: "./src/checkout.html",
+      }),
+
+
     new MiniCssExtractPlugin({filename:"css/style.css"}),
     new OptimizeCSSAssetsPlugin({}),
   ],
