@@ -17,7 +17,7 @@ module.exports = {
 
   devServer: {
       contentBase: path.join(__dirname, "/dist"),
-      port: 1999,
+      port: 1988,
       writeToDisk: true,
       open: true,
   },
@@ -98,6 +98,11 @@ module.exports = {
       new HtmlWebpackPlugin({
         filename: "checkout.html", 
         template: "./src/checkout.html",
+      }),
+
+      new HtmlWebpackPlugin({
+        filename: "payment.html", 
+        template: "./src/payment.html",
       }),
 
 

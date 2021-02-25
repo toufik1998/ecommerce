@@ -404,7 +404,7 @@ h3.custom-heading{
     max-width: 260px;
     margin: auto;
 }
-input[type=email]{
+input[type=email], input[type=number]{
     direction: rtl;
     text-align: right;
 }
@@ -652,6 +652,27 @@ input[type=email]{
 .custom-table .total-price .custom-text-muted .custom-text-muted{
     color: #a9a9a9;
 }
+
+/******************************************************
+*********************** payment page ******************
+******************************************************/
+.custom-input-details{
+    border-width: 2px;
+    border-radius: 3px;
+    font-size: 18px;
+    height: 46px !important;
+    padding: 0px 16px;
+    width: 97%;
+}
+.custom-form-control:focus{
+    border-color: #b86d07;
+    box-shadow: #b86d07;
+}
+#credit-card-info{
+    margin-right: 3%;
+}
+
+
 
 
 
