@@ -672,7 +672,121 @@ input[type=email], input[type=number]{
     margin-right: 3%;
 }
 
+/************************************
+************** search page *********
+***********************************/
+#form-advanced-search{
+    border: 1px solid #ebebeb;
+    display: table;
+    padding-bottom: 20px;
+}
+#form-advanced-search .custom-pane{
+    border: none;
+    padding: 5px;
+}
+.custom-pane .card-header{
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 7px 10px 13px;
+}
+.custom-list-group>.list-group-item{
+    border: none;
+    padding: 0px 10px 14px 14px;
+}
+.custom-list-group>.list-group-item:last-child{
+    padding: 0px 10px 0px 0px;
+}
+#form-advanced-search label{
+    cursor: pointer;
+    font-weight: bold !important;
+}
+/*********************************************
+************ تنسيق مكون البحث حسب السعر ****
+**********************************************/
+.ui-slider{
+    margin: 25px 0px 15px !important;
+    height: 2px !important;
+}
+/**************************************************
+***** المقبضان الخاصان بمكون البحث حسب السعر ***
+**************************************************/
+.ui-slider .ui-slider-handle{
+    background-color: #f8ad47 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    height: 12px !important;
+    width: 12px !important;
+    top: -6px !important;
+}
+/**************************************************************************
+*************** المجال الدي يظهر محددا بلون داخل مكون البحث حسب السعر **
+*****************************************************************************/
+.ui-slider .ui-slider-range{
+    border: 1px solid #f8ad47 !important;
+    top: -1px !important;
+}
+.custom-pagination li a{
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    height: 32px;
+    width: 32px;
+    color: #c2c2c2;
+    line-height: 32px;
+    margin-left: 3px;
+    margin-right: 3px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.custom-pagination li.active a{
+    background-color: #f8ad47;
+    color: fff;
+    border-color: #f8ad47;
+}
+.custom-pagination li.active a:active,
+.custom-pagination li.active a:focus,
+.custom-pagination li.active a:hover{
+    color: #ab7731;
+    border-color: #ab7731;
+}
+#search-results .custom-thumbnail{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.custom-pagination{
+    margin: 25px 0px;
+}
 
+
+/**********************************************
+************ contact page *********************
+**********************************************/
+#map{
+    padding: 0px;
+}
+#contact-options h4{
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+.heading-with-border-bottom{
+    margin-bottom: 20px;
+}
+#contact-info{
+    margin-bottom: 25px;
+}
+#contact-info .fa-lg{
+    font-size: 18px;
+    color: #f3af41;
+    margin: 10px 10px 7px 10px;
+    width: 25px;
+    text-align: center;
+}
+#contact-options textarea{
+    height: 128px !important;
+}
+#contact-options{
+    margin-bottom: 25px;
+}
 
 
 
@@ -765,6 +879,16 @@ input[type=email], input[type=number]{
         line-height: 40px;
         font-size: 20px;
         margin: 10px;
+    }
+    /*** search page **/
+    .ui-slider .ui-slider-handle{
+        height: 20px !important;
+        width: 20px !important;
+        top: -10px !important;
+    }
+    /*** contact page ****/
+    #form-subscription{
+        margin-bottom: 40px;
     }
 }
 

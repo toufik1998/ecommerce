@@ -1,10 +1,13 @@
 import "@laylazi/bootstrap-rtl/dist/css/bootstrap-rtl.min.css";
 import "./css/style.css";
+import 'webpack-jquery-ui';
+import 'webpack-jquery-ui/css';
 import 'bootstrap';
 import "jquery/dist/jquery";
 import "popper.js/dist/popper";
 import "bootstrap/dist/js/bootstrap";
 import "@fortawesome/fontawesome-free/js/all";
+import 'jquery-ui-touch-punch/jquery.ui.touch-punch';
 
 $(document).ready(function(){
 
@@ -123,6 +126,19 @@ $(document).ready(function(){
 
         // بدل معلومات بطاقة الائتمان بين الظهور والاخفاء
         $("#credit-card-info").toggle();
+     });
+
+     // مكون البحث حسب السعر
+     $("#price-range").slider({
+         range: true,
+         min: 50,
+         max: 1000,
+         step: 50,
+         values: [250, 800],
+         slide: function(event, ui){
+             $("#price-min").text(ui.values[0]);
+             $("#price-max").text(ui.values[1]);
+         }
      });
 
 
